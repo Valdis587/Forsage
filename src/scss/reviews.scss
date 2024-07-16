@@ -1,0 +1,17 @@
+.reviews {
+    &__item {
+        padding: 10px;
+        border: 1px solid #bdbdbd;
+        border-radius: 5px;
+        p {
+            margin: 10px 0;
+        }
+    }
+    &__item:not(:first-child) {
+        margin: 10px 0 0 0;
+    }
+    &__name {
+        color: $ColorHead;
+        font-size: 20px;
+    }
+}

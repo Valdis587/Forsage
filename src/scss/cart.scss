@@ -1,0 +1,85 @@
+.cart { 
+    &__item { 
+        border: 1px solid #bdbdbd;
+        border-radius: 5px;
+        p {
+            padding: 0;
+        }
+    display: grid;
+    grid-template-rows: 200px minmax(50px, auto);
+    gap: 5px;
+    }
+    &__left {
+        min-width: 300px;
+        img {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
+    }
+    &__right {
+        padding: 0 5px;
+        display: grid;
+        grid-template-rows: minmax(25px, 40px) 20px minmax(60px, auto) 30px;
+        gap: 5px;  
+    }
+    &__title {
+        color: $ColorHead;
+        font-size: 20px;
+        line-height: 105%;
+        transition: 0.3s all ease 0.3s;
+        margin: 5px 0 0 0;
+    }
+    &__date {
+        color: $ColorDuble;
+    }
+    &__link {
+        color: $ColorHead;
+    }
+    &__link:hover, &__title:hover {
+        color: $ColorDuble;
+    }
+
+    &__right-service {
+        text-align: center;
+        align-self: center;
+    }
+    &__button {
+        margin: 0 0 5px 0;
+    }
+    &__right-job {
+        display: grid;
+        grid-template-rows: 30px 60px 30px;
+        gap: 5px;
+        text-align: center;
+        padding: 0 5px;
+    }
+    &__right-price-item {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        justify-content: space-between;
+        gap: 5px;
+        .item-left, .item-right {
+            margin: 5px 0; 
+        }
+        .item-right {
+            color: green;
+        }
+        span {
+            border-bottom: 1px solid #bdbdbd;
+            padding: 0 0 5px 0;
+        }
+    }
+    &__job-button {
+        padding: 5px 10px;
+        background-color: $ColorHead;
+        color: $ColorWhite;
+        align-self: center;
+        justify-self: center;
+        width: 50%;
+        border-radius: 3px;   
+    }
+    &__job-button:hover {
+        background-color: $ColorDuble;
+    }
+}

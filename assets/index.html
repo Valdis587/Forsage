@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240716184020">
+   <title>Главная</title>
+</head>
+<body>
+   <div class="wrapper">
+   <header class="header">
+    <div class="header__head container">
+        <div class="header__logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+        <div class="header__info">
+            <div class="header__time">
+                <span class="header__icon"><i class="icon-clock"></i></span>
+                <div class="header__time-wrapp">
+                <p>Часы работы:</p>
+                <span class="header__icon-text">СТО c 9-00 до 21-00</span>
+                <p>(ежедневно)</p>
+            </div>
+            </div>
+            <div class="header__adres">
+                <span class="header__icon"><i class="icon-map-marker-alt"></i></span>
+                <div class="header__adres-wrapp">
+                <p>Адрес:</p>
+                <span class="header__icon-text">Санкт-Петербург, Тихорецкий проспект, дом 6, корпус 2.</span>
+                <p>Станция метро «Политехническая» - 5 минут пешком.</p>
+            </div>
+            </div>
+        </div>
+        <div class="header__phone">
+            <a href="" ><i class="icon-phone-alt"></i>+7 (812) 327-10-10</a>
+        </div>
+    </div>
+    <div class="header__menu-line">
+        <div class="header__menu container">
+            <button aria-label="menu" class="header__burger"><i class="icon-bars"></i></button>
+            <nav class="header__menu-nav">
+                <button aria-label="menu-close" class="header__menu-close"><i class="icon-plus"></i></button>
+                <ul class="header__menu-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li class="menu-item-has-children"><a href="service.html">Услуги</a><i class="icon-angle-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="">Цены</a></li>
+                            <li><a href="">Фотогалерея</a></li>
+                            <li><a href="">Проекты</a></li>
+                            <li><a href="">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="vakansi.html">Вакансии</a></li>
+                    <li><a href="404.html">Фотогалерея</a></li>
+                    <li><a href="proekty.html">Проекты</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="contacty.html">Контакты</a></li>
+                    <li><a href="onas.html">О нас</a></li>
+                </ul>
+            </nav>
+                <a href="#" id="call-popup" class="header__button"><i class="icon-envelope"></i>Запись на сервис</a>
+        </div>
+    </div>
+</header>
+   <div class="content-wrapper">
+   <section class="homeslider">
+    <h1 class="homeslider__h1">Этот газ в наши дни нашел самое широкое применение. </h1>
+    <div class="swiper homeslider__slider">
+        <div class="swiper-wrapper homeslider__wrapper">
+            <div class="swiper-slide homeslider__item">
+                <div class="homeslider__img">
+                    <img src="images/slider/1.jpg" alt="">
+                </div>
+                <div class="homeslider__text-wraper">
+                <div class="homeslider__text container">
+                    <h2 class="homeslider__title">Полировка фар - БЕСПЛАТНО!</h2>
+                    <h3 class="homeslider__title-sm">Акции! Услуги эвакуатора во всех районах - от 1000 руб.</h3>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide homeslider__item">
+                <div class="homeslider__img">
+                    <img src="images/slider/2.jpg" alt="">
+                </div>
+                <div class="homeslider__text-wraper">
+                <div class="homeslider__text container">
+                    <h2 class="homeslider__title">Полная компьютерная диагностика 900 руб.</h2>
+                    <h3 class="homeslider__title-sm">Услуги эвакуатора во всех районах - от 1000 руб.</h3>
+                  
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide homeslider__item">
+                <div class="homeslider__img">
+                    <img src="images/slider/3.jpg" alt="">
+                </div>
+                <div class="homeslider__text-wraper">
+                <div class="homeslider__text container">
+                    <h2 class="homeslider__title">Развал схождение от 900 руб</h2>
+                    <h3 class="homeslider__title-sm">Приглашаем на работу в новый автосервис</h3>                  
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+<section class="home-serv">
+    <h4 class="home__title">Услуги</h4>
+        <div class="swiper home-serv__content container">
+            <div class="swiper-wrapper home-serv__wrapper">
+                <div class="swiper-slide cart__item ">
+                    <div class="cart__left">
+                        <img src="images/blog/bi.jpg" alt="">
+                    </div>
+                    <div class="cart__right-service">
+                        <a class="cart__title" href="serv-single.html">Бесплатный осмотр</a>
+                    </div>
+                </div>
+                <div class="swiper-slide cart__item ">
+                    <div class="cart__left">
+                        <img src="images/blog/bi.jpg" alt="">
+                    </div>
+                    <div class="cart__right-service">
+                        <a class="cart__title" href="serv-single.html">Бесплатный осмотр</a>
+                    </div>
+                </div>
+                <div class="swiper-slide cart__item ">
+                    <div class="cart__left">
+                        <img src="images/blog/bi.jpg" alt="">
+                    </div>
+                    <div class="cart__right-service">
+                        <a class="cart__title" href="serv-single.html">Бесплатный осмотр</a>
+                    </div>
+                </div>
+                <div class="swiper-slide cart__item ">
+                    <div class="cart__left">
+                        <img src="images/blog/bi.jpg" alt="">
+                    </div>
+                    <div class="cart__right-service">
+                        <a class="cart__title" href="serv-single.html">Бесплатный осмотр</a>
+                    </div>
+                </div>
+                <div class="swiper-slide cart__item">
+                    <div class="cart__left">
+                        <img src="images/blog/bi.jpg" alt="">
+                    </div>
+                    <div class="cart__right-service">
+                        <a class="cart__title" href="serv-single.html">Бесплатный осмотр</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+</section> 
+<section class="featured">
+    <h4 class="home__title">Преимущества</h4>
+    <div class="featured__content container">
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость Скорость</p>
+            </div>
+        </div>
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость Скорость</p>
+            </div>
+        </div>
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость СкоростьСкорость Скорость Скорость Скорость Скорость </p>
+            </div>
+        </div>
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость Скорость</p>
+            </div>
+        </div>    
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость Скорость</p>
+            </div>
+        </div>   
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость Скорость</p>
+            </div>
+        </div>   
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость Скорость</p>
+            </div>
+        </div>   
+        <div class="featured__item shadow">
+            <div class="featured__left">
+                <img width="90" height="80" src="images/heart.svg" alt="">
+            </div>
+            <div class="featured__right">
+                <p class="featured__title">Скорость</p>
+                <p class="featured__desc">Скорость Скорость Скорость Скорость Скорость</p>
+            </div>
+        </div>  
+    </div>
+</section>
+
+<section class="jobhome ">
+    <h4 class="home__title">Проекты</h4>
+    <div class="swiper jobhome__content container">
+        <div class="swiper-wrapper jobhome__wrapper cart">
+            <div class="swiper-slide cart__item ">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                 <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item ">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                    <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item ">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                    <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item ">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                    <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item ">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                    <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item ">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                    <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item ">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                    <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right-job">
+                    <a class="cart__title" href="">Бесплатный осмотр</a>
+                    <div class="cart__right-price">
+                        <div class="cart__right-price-item">
+                          <span class="item-left">Размеры:</span>
+                          <span class="item-right">170х20</span>
+                        </div>
+                        <div class="cart__right-price-item">
+                            <span class="item-left">Размеры:</span>
+                            <span class="item-right">170х20</span>
+                          </div>
+                    </div>
+                    <a class="cart__job-button" href="">Подробнее</a>
+                </div>
+            </div>    
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+
+
+<section class="onas" style="background-image: url('images/slider/1.jpg');">
+    <div class="onas__content container">
+        <div class="onas__item">
+            <h4 class="blue__title">О нас</h4>
+            <div class="onas__text">
+                <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно. К счастью сегодня нет недостатка в автомойках, где вашей машине быстро и сравнительно недорого вернут прежний вид, сделав ее чистой и сверкающей.</p>
+                <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно. К счастью сегодня нет недостатка в автомойках, где вашей машине быстро и сравнительно недорого вернут прежний вид, сделав ее чистой и сверкающей.</p>
+                <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно. К счастью сегодня нет недостатка в автомойках, где вашей машине быстро и сравнительно недорого вернут прежний вид, сделав ее чистой и сверкающей.</p>
+            </div>
+        </div>
+        <div class="onas__item onas__right">
+            <div class="onas__img">
+                <img src="images/man.png" alt="">
+            </div>
+            <div class="onas__tre"></div>
+        </div>
+    </div>
+</section>
+<section class="faq">
+    <h4 class="home__title">Вопросы</h4>
+    <div class="faq__content container">
+        <div class="faq__item">
+            
+            <div class="faq__title">Вопросы 1</div>
+       
+           <div class="faq__otvet">
+            <p>Ответ 1</p>
+          </div>
+        </div>
+        <div class="faq__item">
+            
+            <div class="faq__title">Вопросы 2</div>
+     
+           <div class="faq__otvet">
+            <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно. К счастью сегодня нет недостатка в автомойках, где вашей машине быстро и сравнительно недорого вернут прежний вид, сделав ее чистой и сверкающей.</p>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="homereviews" style="background-image: url('images/slider/1.jpg');">
+    <h4 class="blue__title">Отзывы</h4>
+    <div class="swiper homereviews__content container">
+        <div class="swiper-wrapper homereviews__wrapper">
+            <div class="swiper-slide homereviews__item">
+                <div class="homereviews__item-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="homereviews__item-bottom">
+                    <div class="homereviews__item-bottom-img">
+                        <img src="images/reviews/22.jpg" alt="">
+                    </div>
+                    <div class="homereviews__item-bottom-info">
+                        <p class="homereviews__item-bottom-name">Danny Boyles</p>
+                        <p class="homereviews__item-bottom-job">Director of Boards, Machinima</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide homereviews__item">
+                <div class="homereviews__item-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="homereviews__item-bottom">
+                    <div class="homereviews__item-bottom-img">
+                        <img src="images/reviews/22.jpg" alt="">
+                    </div>
+                    <div class="homereviews__item-bottom-info">
+                        <p class="homereviews__item-bottom-name">Danny Boyles</p>
+                        <p class="homereviews__item-bottom-job">Director of Boards, Machinima</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide homereviews__item">
+                <div class="homereviews__item-text">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="homereviews__item-bottom">
+                    <div class="homereviews__item-bottom-img">
+                        <img src="images/reviews/22.jpg" alt="">
+                    </div>
+                    <div class="homereviews__item-bottom-info">
+                        <p class="homereviews__item-bottom-name">Danny Boyles</p>
+                        <p class="homereviews__item-bottom-job">Director of Boards, Machinima</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+
+<section class="bluefeatured">
+    <div class="bluefeatured__content container">
+        <div class="bluefeatured__left">
+            <h4 class="blue__title">Преимущества</h4>
+            <ul class="bluefeatured__list">
+                <li class="bluefeatured__list-item">
+                    <div class="bluefeatured__list-img">
+                        <img src="images/heart.svg" alt="">
+                    </div>
+                    <div class="bluefeatured__list-text">
+                        <span class="bluefeatured__list-text-title">Скорость</span> 
+                        <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно.</p>  
+                    </div>
+                </li>
+                <li class="bluefeatured__list-item">
+                    <div class="bluefeatured__list-img">
+                        <img src="images/heart.svg" alt="">
+                    </div>
+                    <div class="bluefeatured__list-text">
+                        <span class="bluefeatured__list-text-title">Скорость</span> 
+                        <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно.</p>  
+                    </div>
+                </li>
+                <li class="bluefeatured__list-item">
+                    <div class="bluefeatured__list-img">
+                        <img src="images/heart.svg" alt="">
+                    </div>
+                    <div class="bluefeatured__list-text">
+                        <span class="bluefeatured__list-text-title">Скорость</span> 
+                        <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно.</p>  
+                    </div>
+                </li>
+                <li class="bluefeatured__list-item">
+                    <div class="bluefeatured__list-img">
+                        <img src="images/heart.svg" alt="">
+                    </div>
+                    <div class="bluefeatured__list-text">
+                        <span class="bluefeatured__list-text-title">Скорость</span> 
+                        <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно.</p>  
+                    </div>
+                </li>
+                <li class="bluefeatured__list-item">
+                    <div class="bluefeatured__list-img">
+                        <img src="images/heart.svg" alt="">
+                    </div>
+                    <div class="bluefeatured__list-text">
+                        <span class="bluefeatured__list-text-title">Скорость</span> 
+                        <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно.</p>  
+                    </div>
+                </li>
+                <li class="bluefeatured__list-item">
+                    <div class="bluefeatured__list-img">
+                        <img src="images/heart.svg" alt="">
+                    </div>
+                    <div class="bluefeatured__list-text">
+                        <span class="bluefeatured__list-text-title">Скорость</span> 
+                        <p>Даже самый дорогой и престижный автомобиль, покрытий пылью и разводами грязи, выглядит непривлекательно и непрезентабельно.</p>  
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bluefeatured__right">
+            <div class="swiper bluefeatured__swiper-big">
+                <div class="swiper-wrapper bluefeatured__wrapper-big">
+                    <div class="swiper-slide bluefeatured__item-slide">
+                        <img src="images/gallery/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide">
+                        <img src="images/gallery/2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide">
+                        <img src="images/gallery/4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide">
+                        <img src="images/gallery/5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide">
+                        <img src="images/gallery/6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide">
+                        <img src="images/gallery/7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper bluefeatured__swiper-small">
+                <div class="swiper-wrapper bluefeatured__wrapper-small">
+                    <div class="swiper-slide bluefeatured__item-slide-small">
+                        <img src="images/gallery/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide-small">
+                        <img src="images/gallery/2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide-small">
+                        <img src="images/gallery/4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide-small">
+                        <img src="images/gallery/5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide-small">
+                        <img src="images/gallery/6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide bluefeatured__item-slide-small">
+                        <img src="images/gallery/7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+<section class="news cart">
+    <h4 class="home__title">Новости</h4>
+    <div class="swiper news__content container">
+        <div class="swiper-wrapper news__wrapper  ">
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Бесплатный осмотр</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">При покупке любого масла на СТО — бесплатный осмотр ходовой. При покупке любого масла на СТО — бесплатный осмотр ходовой.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Бесплатный осмотр</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">При покупке любого масла на СТО — бесплатный осмотр ходовой.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/big.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Компьютерная диагностика</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">Полная компьютерная диагностика - 1 000 руб.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/raz.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Бесплатный осмотр</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">При покупке любого масла на СТО — бесплатный осмотр ходовой.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Бесплатный осмотр</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">При покупке любого масла на СТО — бесплатный осмотр ходовой. При покупке любого масла на СТО — бесплатный осмотр ходовой.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/bi.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Бесплатный осмотр</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">При покупке любого масла на СТО — бесплатный осмотр ходовой.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/big.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Компьютерная диагностика</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">Полная компьютерная диагностика - 1 000 руб.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+            <div class="swiper-slide cart__item">
+                <div class="cart__left">
+                    <img src="images/blog/raz.jpg" alt="">
+                </div>
+                <div class="cart__right">
+                    <p class="cart__title">Бесплатный осмотр</p>
+                    <p class="cart__date">04.07.2024</p>
+                    <p class="cart__desc">При покупке любого масла на СТО — бесплатный осмотр ходовой.</p>
+                    <a class="cart__link" href="">Читать далее...</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+<section class="logo">
+    <div class="swiper logo__slider container">
+        <div class="swiper-wrapper logo__wrapper">
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/01.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/02.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/11.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/04.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/05.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/06.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/07.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/08.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/09.jpg" alt="">
+            </div>
+            <div class="swiper-slide logo__item">
+                <img src="images/logo/10.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+
+</div><!--end cintent wrapper-->
+   
+<footer class="footer">
+    <div class="footer__head-line">
+        <div class="footer__head-content container">
+            <div class="footer__head-social">
+                <ul class="footer__social-list">
+                    <li><a aria-label="telegram" href=""><i class="icon-telegram-plane"></i></a></li>
+                    <li><a aria-label="skype"  href=""><i class="icon-skype"></i></a></li>
+                    <li><a aria-label="viber"  href=""><i class="icon-viber"></i></a></li>
+                    <li><a aria-label="vk"  href=""><i class="icon-vk"></i></a></li>
+                    <li><a aria-label="whatsapp" href=""><i class="icon-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__head-form">
+                <div class="footer__head-form-content">
+                    <p>
+                    <input type="text" class="footer__form-name" placeholder="Ваше имя">
+                    <input id="phone" type="text" class="footer__form-phone">
+                    <button class="footer__form-button">Отправить</button> 
+                </p>
+                </div>
+                    <p>Я даю согласие на обработку моих данных</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__menu-line container">
+        <div class="footer__menu-item footer__block">
+            <h5 class="footer__menu-title">Контакты</h5>
+            <ul class="footer__contact-list">
+                <li><a href=""><i class="icon-phone-alt"></i>+7 (812) 327-10-10</a></li>
+                <li><a href=""><i class="icon-envelope"></i>info@forsazh-spb.ru</a></li>
+                <li><i class="icon-map-marker-alt"></i>Санкт-Петербург, Тихорецкий проспект, дом 6, корпус 2.</li>
+                <li><i class="icon-clock"></i> СТО c 9-00 до 21-00</li>
+            </ul>
+        </div>
+        <div class="footer__menu-item">
+            <h5 class="footer__menu-title">Страницы</h5>
+            <ul class="footer__menu-list">
+                <li><i class="icon-angle-double-right"></i><a href="">Главная</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">Новости</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">Отзывы</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">Контакты</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">О нас</a></li>
+            </ul>
+        </div>
+        <div class="footer__menu-item">
+            <h5 class="footer__menu-title">Услуги</h5>
+            <ul class="footer__menu-list">
+                <li><i class="icon-angle-double-right"></i><a href="">Главная</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">Новости</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">Отзывы</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">Контакты</a></li>
+                <li><i class="icon-angle-double-right"></i><a href="">О нас</a></li>
+            </ul>
+        </div>
+        <div class="footer__menu-item footer__block">
+            <p>Веб-сайт представляет собой визитную карточку организации онлайн, обеспечивает присутствие на мировом рынке.</p>
+            <p>Веб-сайт представляет собой визитную карточку организации онлайн, обеспечивает присутствие на мировом рынке.</p>
+        </div>
+    </div>
+    <div class="footer__copy">
+        2024
+    </div>
+    <a class="footer__button-up" href="javascript:void(0);"><i class="icon-angle-down"></i></a>
+</footer>
+<div id="mini" class="popup">
+    <div class="popup__body popup__show">   
+        <div class="popup__content">
+          <button aria-label="popup close" class="popup__close"><i class="icon-plus"></i></button>
+              <h6 class="popup__title">Заказать звонок</h6>
+<form action="#" class="form">
+    <input type="text" class="form__input-name" placeholder="Ваш имя" >
+    <input type="phone" class="form__input-tel" placeholder="Ваш телефон" >
+    <input id="agreement" checked class="form__check" name="agreement" type="checkbox"  />
+    <label class="form__check-label" for="agreement">Я даю согласие на обработку моих данных!</label>
+    <button type="button" class="form__button">Отправить</button>
+</form>
+</div>
+</div>
+</div>
+<!--end end popup-->
+<script src="js/scripts.min.js?_v=20240716184020"></script>
+<script src="js/mask.min.js?_v=20240716184020"></script>
+<script src="js/lib.min.js?_v=20240716184020"></script>
+</div><!--end wrapper-->
+</body>
+</html>

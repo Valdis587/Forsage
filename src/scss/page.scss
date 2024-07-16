@@ -1,0 +1,54 @@
+.page {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 10px;
+        @media (max-width: 810px) {
+            grid-template-columns: 1fr; 
+        }
+    }
+    &__item {
+        padding: 5px;
+    }
+    &__contact-list {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        gap: 20px;
+        font-size: 20px;
+        line-height: 22px;
+        i {
+            color: $ColorHead;
+            margin: 0 10px 0 0;
+            font-size: 17px;
+        }
+        a:hover {
+            color: $ColorDuble; 
+        }
+    }
+    &__onastext {
+        @include funcAdaptiv(font-size, 18, 25);
+        @include funcAdaptiv(line-height, 18, 25);
+        font-style: italic;
+    }
+    &__error-wrapp, &__error-button-wrapp {
+        text-align: center;
+        margin: 60px 0;
+    }
+    &__onasimg {
+    img {
+        color: #ffffff;
+        border-radius: 5px; 
+    }
+}
+    &__error-title {
+        color: $ColorHead;
+        @include funcAdaptiv(font-size, 25, 125);
+        @include funcAdaptiv(line-height, 25, 125);
+        font-style: italic;
+    }
+    &__error-desk {
+        @include funcAdaptiv(font-size, 25, 45);
+        @include funcAdaptiv(line-height, 25, 45);
+    }
+}

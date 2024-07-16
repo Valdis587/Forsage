@@ -1,0 +1,23 @@
+.site-table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-collapse: collapse; 
+    thead {
+        background-color: $ColorHead;
+        color: $ColorWhite;
+       
+    }
+    th, td {
+        padding: 5px; 
+        border: 1px solid #dddddd;
+    }
+    tbody {
+    tr:nth-child(odd) {
+        background: #fff;
+    }
+    tr:nth-child(even) {
+        background: #d8d8d8;
+    }
+}
+}

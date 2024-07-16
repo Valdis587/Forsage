@@ -1,0 +1,340 @@
+.homeslider {
+    position: relative;
+   &__slider {
+height: 380px;
+   }
+   &__h1 {
+    position: absolute;
+    z-index: 12;
+    color: $ColorWhite;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 80%;
+    @include funcAdaptiv(font-size, 20, 40);
+    @include funcAdaptiv(line-height, 20, 40);
+    padding: 10px 5px;
+    @media (max-width: 460px) { 
+        width: 90%;
+        text-align: center;
+     }
+   }
+    &__img {
+        max-width: 1920px;
+        z-index: 1;
+        
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    &__text-wraper {
+        width: 100%;
+        height: 100%;
+        background: rgb(64,115,162);
+background: linear-gradient(30deg, rgba(64,115,162,1) 39%, rgba(255,255,255,0) 79%);
+position: absolute;
+z-index: 10;
+left: 0;
+top: 0;
+color: $ColorWhite;
+    }
+    &__text {
+        position: absolute;
+        z-index: 12;
+        color: $ColorWhite;
+        top: 50%;
+        left: 22%;
+        width: 80%;
+        transform: translate(-15%, -50%);  
+        padding: 10px 5px;
+      
+        border-radius: 5px;
+        @media (max-width: 460px) { 
+            width: 90%;
+            text-align: center;
+            left: 20%;
+         }
+    }
+    &__title {
+        @include funcAdaptiv(font-size, 20, 30);
+        @include funcAdaptiv(line-height, 20, 30);
+        padding: 10px 0;
+    }
+    &__title-sm {
+        @include funcAdaptiv(font-size, 18, 28);
+        @include funcAdaptiv(line-height, 18, 28);
+        padding: 10px 0;
+        font-style: italic;
+    }
+    &__button-wrap {
+        margin: 20px 0 20px 20px;
+    }
+}
+
+.featured {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 350px);
+        gap: 10px;
+        justify-content: center;
+    }
+    &__item {
+        border: 2px solid $ColorHead;
+        border-radius: 3px;
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto minmax(60px, auto);
+        gap: 10px;
+        justify-self: center;
+    }
+    &__right {
+       display: grid;
+       grid-template-rows: 20px auto;
+       gap: 5px;
+       padding: 0 5px;
+    }
+    &__title {
+        color: $ColorHead;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    &__desc {
+        padding: 5px 0;
+    }
+}
+
+.logo {
+    height: auto;
+    margin: 50px 0 0 0;
+    &__item {
+        text-align: center;
+    }
+}
+
+.faq {
+    &__content {
+      max-width: 800px;
+    }
+    &__item {
+        margin: 10px 0;
+       width: 100%; 
+    }
+    &__title {
+        color: $ColorWhite;
+        @include funcAdaptiv(font-size, 16, 20);
+        @include funcAdaptiv(line-height, 16, 20);       
+        background-color: $ColorHead;
+        padding: 10px 5px;
+        position: relative;
+        cursor: pointer;
+        border-radius: 3px;
+        
+    }
+    &__title::after {
+        width: 800px;
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transition: all 0.8s ease-in-out;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-top: solid 2px $ColorWhite;
+        border-right: solid 2px $ColorWhite;
+        transform: translateY(-50%) rotate(135deg);
+        margin: 0 5px;
+    }
+    &__otvet {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        p {
+            margin: 0;
+            padding: 10px 5px;
+        }
+    }
+    .active::after {
+        transform: translateY(-50%) rotate(315deg);
+    }
+    
+   
+}
+
+.onas {
+    background-color: $ColorHead;
+    margin: 80px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__content {
+        display: grid;
+        grid-template-columns: minmax(auto, 60%) 40%;
+        gap: 10px;
+        align-items: center;
+        @media (max-width: 810px) { 
+            grid-template-columns: 1fr;
+        }
+    }
+   
+    &__text, &__title {
+        color: $ColorWhite;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 21px;
+        font-style: italic;
+        padding: 10px;
+    }
+    &__img {
+        max-width: 500px;
+        margin: 5px auto 0 auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.bluefeatured {
+    height: auto;
+    background-color: $ColorHead;
+    margin: 80px 0;
+    color: $ColorWhite;
+    &__content {
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(40%, 50%));
+        gap: 10px;
+        align-items: center;
+        @media (max-width: 960px) { 
+            grid-template-columns: 100%;
+        }
+    }
+    &__right, &__left {
+        padding: 10px;
+    }
+    &__list-text-title {
+        @include funcAdaptiv(font-size, 18, 25);
+        @include funcAdaptiv(line-height, 18, 25);
+    }
+    &__list-item {
+        display: grid;
+        grid-template-columns: 60px minmax(auto, 100%);
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0;
+        border-bottom: 1px solid $ColorWhite;
+    }
+    &__list-img {
+        img {
+            width: 40px;      
+        }
+    }
+    &__item-slide {
+        min-width: 500px;
+        background-size: cover;
+        background-position: center;
+        img {
+            width: 100%;
+            height: 400px;
+            border-radius: 3px;
+            @media (max-width: 550px) {
+                height: 200px;
+             }
+        }
+    }
+    &__swiper-small {
+        margin: 10px 0;
+    }
+    &__item-slide-small {
+        @media (max-width: 550px) {
+            max-width: 170px;
+         }
+        max-width: 150px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+        img {
+            width: 100%;
+            height: 100px;
+            border-radius: 3px;
+            border: 1px solid $ColorHead;
+            cursor: pointer;
+            transition: 0.3s all ease 0.3s;
+            @media (max-width: 550px) {
+                height: 80px;
+             }
+        }
+        img:hover {
+            border: 1px solid $ColorDuble;
+        }
+    }
+}
+.jobhome {
+    &__content {
+        height: 380px;
+    }
+}
+.home-serv {
+&__content {
+    height: 265px;
+}
+}
+.news {
+    &__content {
+       height: 390px;
+    }
+}
+
+.homereviews {
+    background-color: $ColorHead;
+    color: $ColorWhite;
+    margin: 40px 0 20px 0;
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+    &__content {
+        padding: 20px 0;
+    }
+    &__item {
+        border: 1px solid $ColorWhite;
+        padding: 10px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: minmax(70px, auto) 110px;
+        gap: 5px;
+    }
+   
+    &__item-bottom {
+        display: grid;
+        grid-template-columns: 100px auto;
+        align-items: center;
+        gap: 10px;
+    }
+    &__item-bottom-img {
+        max-width: 100px;
+       img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 3px solid $ColorWhite;
+        }
+    }
+    &__item-text {
+        font-size: 18px;
+        line-height: 19px;
+        font-style: italic;
+    }
+    &__item-bottom-info {
+        p {
+            margin: 0 0 10px 0;
+        }
+    }
+    &__item-bottom-name {
+        font-size: 20px;
+    }
+}

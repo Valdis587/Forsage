@@ -1,0 +1,136 @@
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/modules/navigation.scss";
+@import "node_modules/swiper/modules/effect-fade.scss";
+@import "base/null.scss";
+@import "base/mixin";
+@import "fonts";
+
+:root {
+   --ColorHead: #4073A2;
+   --ColorDuble: #EF3E31;
+   --ColorWhite: #ffffff;
+   --ColorBlack: #000000;
+   --ColorFooter: #2c2c2c;
+   --ColorText: #333333;
+}
+
+$minWidth: 320;
+$maxWidthContainer: 1590;
+$padding: 15;
+
+$ColorHead: var(--ColorHead);
+$ColorDuble: var(--ColorDuble);
+$ColorWhite: var(--ColorWhite);
+$ColorBlack: var(--ColorBlack);
+$ColorFooter: var(--ColorFooter);
+$ColorText: var(--ColorText);
+
+.container {
+   max-width: #{$maxWidthContainer}px;
+   padding: 0 #{$padding}px;
+   margin: 0 auto;
+}
+
+.page-title {
+   @include funcAdaptiv(font-size, 20, 30);
+    @include funcAdaptiv(line-height, 20, 30);  
+}
+.home__title {
+   text-align: center;
+   margin: 40px 0 50px 0;
+   @include funcAdaptiv(font-size, 25, 40);
+   @include funcAdaptiv(line-height, 25, 40);
+   font-weight: 600;
+   position: relative;
+}
+.home__title::after {
+   content: "";
+   position: absolute;
+   top: 35px;
+   left: 50%;
+   transform: translate(-50%, 30px);
+   height: 5px;
+   width: 300px;
+   background-color: $ColorHead;
+   border-radius: 5px;
+   @media (max-width: 810px) { 
+      top: 20px;
+      transform: translate(-50%, 20px);
+   }
+}
+.blue__title {
+   @include funcAdaptiv(font-size, 25, 40);
+   @include funcAdaptiv(line-height, 25, 40);
+   text-align: center;
+   padding: 10px 0 30px 0; 
+   position: relative;
+   color: $ColorWhite;
+}
+.blue__title::after {
+   content: "";
+   position: absolute;
+   top: 35px;
+   left: 50%;
+   transform: translate(-50%, 30px);
+   height: 5px;
+   width: 300px;
+   background-color: $ColorWhite;
+   border-radius: 5px;
+   @media (max-width: 810px) { 
+      top: 20px;
+      transform: translate(-50%, 30px);
+   }
+}
+.swiper-button-prev, .swiper-button-next {
+   background-color: $ColorHead;
+   width: 40px;
+   height: 40px;
+   border: 2px solid $ColorWhite;
+   border-radius: 100%;
+   color: $ColorWhite;
+   transition: 0.3s all ease 0.3s;
+   @media (max-width: 460px) { 
+      display: none;
+   }
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+   background-color: $ColorDuble;
+   
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+   font-size: 20px
+}
+
+.site-button {
+   background-color: $ColorHead;
+   padding: 10px 30px;
+   color: $ColorWhite;
+   border-radius: 3px;
+   font-size: 20px;
+   transition: 0.3s all ease 0.3s;
+}
+.site-button:hover {
+   background-color: $ColorDuble;
+}
+
+body {
+   color: $ColorText;
+}
+
+@import "./wp/wpstyle.scss";
+@import "header";
+@import "table";
+@import "cart";
+@import "home";
+@import "blog";
+@import "reviews";
+@import "proektysingl";
+@import "page";
+@import "vakansi";
+@import "proekty";
+@import "service";
+@import "sidebar";
+@import "form";
+@import "footer";
+
+

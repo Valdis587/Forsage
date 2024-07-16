@@ -1,0 +1,24 @@
+.job {
+    &__content {
+        display: grid;
+        grid-template-columns: auto minmax(320px, 400px);
+        gap: 10px;
+        @media (max-width: 760px) {
+            grid-template-columns: 100%;
+         }
+    }
+    
+    &__content-left {
+        padding: 0 10px;
+    
+    }
+    &__content-wrapper {
+        padding: 0 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+        gap: 10px;
+        @media (max-width: 760px) {
+            justify-content: center;
+         }
+    }
+}

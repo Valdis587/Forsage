@@ -1,0 +1,35 @@
+.panel {
+    padding: 20px  10px;
+    &__title-wrapp {
+      display: flex;
+       align-items: center;
+       margin: 20px 0 5px 0;
+      & i {
+        transform: rotate(-90deg);
+        @include funcAdaptiv(font-size, 20, 30);
+        color: $ColorHead;
+       }
+       &__page-title {
+        @include funcAdaptiv(font-size, 20, 30);
+       }
+    }
+
+.breadcrumbs {
+    li {
+        display: inline-block; 
+    }
+    i {
+       font-size: 12px;
+       padding: 0 0 0 5px;
+    }
+   li:not(:first-child) {
+    margin: 0 0 0 5px;
+   }
+   &__active {
+    color: $ColorHead;
+   }
+   a:hover{
+    color: $ColorHead;
+   }
+}
+}
